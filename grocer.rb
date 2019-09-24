@@ -58,6 +58,7 @@ def checkout(cart, coupons)
   after_clearance = apply_clearance(after_coupons)
   after_clearance.reduce(0) do |acu, (k,v)|
     
+    acu
     binding.pry
   end
 end
