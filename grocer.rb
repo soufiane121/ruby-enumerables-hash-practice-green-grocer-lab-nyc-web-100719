@@ -56,7 +56,7 @@ def checkout(cart, coupons)
   new_cart = consolidate_cart(cart)
   after_coupons = apply_coupons(new_cart,coupons)
   after_clearance = apply_clearance(after_coupons)
-  after_coupons.reduce do |acu, (k,v)|
+  after_clearance.reduce do |acu, (k,v)|
     
     binding.pry
   end
