@@ -11,7 +11,8 @@ def items
 		{"BEER" => {:price => 13.00, :clearance => false}},
 		{"PEANUTBUTTER" => {:price => 3.00, :clearance => true}},
 		{"BEETS" => {:price => 2.50, :clearance => false}}
-	]
+    ]
+
 end
 
 def coupons
