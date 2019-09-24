@@ -60,6 +60,7 @@ def checkout(cart, coupons)
      acu+= (v[:price]*v[:count])
     acu
   end
-  final_amount
-    binding.pry
+  ten_percent = final_amount*0.10
+  final_amount> 100 ? final_amount - ten_percent : final_amount
+   # binding.pry
 end
