@@ -57,7 +57,7 @@ def checkout(cart, coupons)
   after_coupons = apply_coupons(new_cart,coupons)
   after_clearance = apply_clearance(after_coupons)
   after_clearance.reduce(0) do |acu, (k,v)|
-    v[:count] > 1 ? acu+= (v[:price]*v[:count]) : acu+= v[:price]
+     acu+= (v[:price]*v[:count])
     acu
     #binding.pry
   end
