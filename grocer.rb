@@ -59,7 +59,7 @@ def checkout(cart, coupons)
   final_amount = after_clearance.reduce(0) do |acu, (k,v)|
      acu+= (v[:price]*v[:count])
     acu
-    #binding.pry
   end
   final_amount
+    binding.pry
 end
